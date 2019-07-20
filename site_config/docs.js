@@ -30,7 +30,7 @@ export default {
   'zh-cn': {
     sidemenu: [
       {
-        title: '大标题',
+        title: '概览',
         children: [
           {
             title: '示例1',
