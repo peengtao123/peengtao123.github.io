@@ -1,3 +1,8 @@
+---
+title: 示例三
+keywords: XML configuration, Consumer, Provider
+description: 使用 XML 配置方式快速上手 Dubbo
+---
 # 跨目录文档之间跳转、图片引用的示例
 
 这是一段文字，将要跳转到demo1。

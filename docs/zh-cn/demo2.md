@@ -1,3 +1,8 @@
+---
+title: 快速启动
+keywords: XML configuration, Consumer, Provider
+description: 使用 XML 配置方式快速上手 Dubbo
+---
 # 文档之间跳转、图片引用的示例
 
 文档之间的跳转链接按照文件目录之间的相对关系配置即可，推荐在同一语言目录下的不同文件夹间跳转，以缩短配置路径。

@@ -3,8 +3,8 @@ import React from 'react';
 export default {
   'zh-cn': {
     brand: {
-      brandName: '开源产品品牌名称',
-      briefIntroduction: '关于开源产品的简单介绍',
+      brandName: 'easydo',
+      briefIntroduction: '让你编程更简单的小艾工具',
       buttons: [
         {
           text: '立即开始',

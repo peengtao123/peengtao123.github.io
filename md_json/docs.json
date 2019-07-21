@@ -18,19 +18,40 @@
   ],
   "zh-cn": [
     {
+      "filename": "app.md",
+      "link": "\\zh-cn\\docs\\app.html",
+      "meta": {
+        "title": "应用",
+        "keywords": "XML configuration, Consumer, Provider",
+        "description": "使用 XML 配置方式快速上手 Dubbo"
+      }
+    },
+    {
       "filename": "demo1.md",
       "link": "\\zh-cn\\docs\\demo1.html",
-      "meta": {}
+      "meta": {
+        "title": "入门",
+        "keywords": "XML configuration, Consumer, Provider",
+        "description": "使用 XML 配置方式快速上手 Dubbo"
+      }
     },
     {
       "filename": "demo2.md",
       "link": "\\zh-cn\\docs\\demo2.html",
-      "meta": {}
+      "meta": {
+        "title": "快速启动",
+        "keywords": "XML configuration, Consumer, Provider",
+        "description": "使用 XML 配置方式快速上手 Dubbo"
+      }
     },
     {
       "filename": "demo3.md",
       "link": "\\zh-cn\\docs\\dir\\demo3.html",
-      "meta": {}
+      "meta": {
+        "title": "示例三",
+        "keywords": "XML configuration, Consumer, Provider",
+        "description": "使用 XML 配置方式快速上手 Dubbo"
+      }
     }
   ]
 }

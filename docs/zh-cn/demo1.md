@@ -1,3 +1,8 @@
+---
+title: 入门
+keywords: XML configuration, Consumer, Provider
+description: 使用 XML 配置方式快速上手 Dubbo
+---
 # 脚注的使用
 
 这是一段示例文字，展示脚注的使用。

@@ -33,15 +33,19 @@ export default {
         title: '概览',
         children: [
           {
-            title: '示例1',
+            title: '入门',
             link: '/zh-cn/docs/demo1.html',
           },
           {
-            title: '示例2',
+            title: '应用',
+            link: '/zh-cn/docs/app.html'
+          },
+          {
+            title: '快速启动',
             link: '/zh-cn/docs/demo2.html',
           },
           {
-            title: '目录',
+            title: '配置',
             opened: true,
             children: [
               {
