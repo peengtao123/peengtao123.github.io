@@ -13,7 +13,7 @@ export default {
         },
         {
           text: '查看Github',
-          link: '',
+          link: 'https://github.com/peengtao123/easydojs',
           type: 'normal',
         },
       ],
