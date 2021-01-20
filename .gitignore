@@ -1,6 +1,6 @@
 target
 node_modules
-src/.vuepress/dist
+docs/.vuepress/dist
 
 ### IntelliJ IDEA ###
 .idea
