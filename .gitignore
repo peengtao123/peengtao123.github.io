@@ -1,0 +1,10 @@
+target
+node_modules
+docs/.vuepress/dist
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
