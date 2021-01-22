@@ -19,7 +19,7 @@ module.exports = {
       {
         text: '系统',
         items: [
-          {text: 'docker',link: 'https://www.runoob.com/docker/docker-tutorial.html'}
+          {text: 'docker菜鸟教程',link: 'https://www.runoob.com/docker/docker-tutorial.html'}
         ]
       },
       {
