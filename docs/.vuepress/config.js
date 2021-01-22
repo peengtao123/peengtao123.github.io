@@ -24,6 +24,13 @@ module.exports = {
           {text: 'vue官网',link: 'https://cn.vuejs.org/'},
           {text: 'Vue CLI',link: 'https://cli.vuejs.org/zh/'},
           {text: 'Bootstrap',link: 'https://www.bootcss.com/'},
+          {text: 'ES6入门教程',link: 'https://es6.ruanyifeng.com/'},
+        ]
+      },
+      {
+        text: '工具网站',
+        items: [
+          {text: 'webpack',link: 'https://webpack.docschina.org/'},
         ]
       },
       { text: 'github', link: 'http://github.com/' },
