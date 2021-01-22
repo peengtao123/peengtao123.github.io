@@ -2,8 +2,9 @@
 home: true
 heroText: 架构师进阶
 tagline: 步入百万年薪之路
-actionText: 快速上手 →
+actionText: 马上出发 →
 actionLink: /guide/
+navbar: false
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
@@ -15,4 +16,4 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
 # hello world
-## 我是社会主义共和国
+## 我是社会主义共和国的
