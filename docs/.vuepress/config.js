@@ -33,18 +33,32 @@ module.exports = {
       {
         title: 'spring',   // 必要的
         path: '/spring/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        collapsable: false, // 可选的, 默认值是 true,
+        //collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
-          '/spring/'
+          '/spring/springboot',
+          '/Mybatis/'
+        ]
+      },
+      {
+        title: '大数据',
+        path: '/bigdata/',
+        children: [
+            '/bigdata/spark',
+            '/bigdata/hive',
+            '/bigdata/hbase'
         ]
       },
       {
         title: '持久化',
         children: [
-            '/guide/'
+          '/Hibernate/',
+          '/Mybatis/',
+          '/Hibernate/mysql',
+          '/Hibernate/redis',
+          '/Hibernate/mongoDb'
         ],
-        initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+        //initialOpenGroupIndex: -1 // 可选的, 默认值是 0
       }
     ]
   }
