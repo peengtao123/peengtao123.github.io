@@ -3,7 +3,12 @@ module.exports = {
   description: '年薪百万之路',
   themeConfig: {
     nav: [
-      {text: 'spring', link: '/spring/'},
+      {
+        text: 'spring',
+        items: [
+            {text: 'dubbo',link: 'http://dubbo.apache.org/zh/'},
+        ]
+      },
       {
         text: '持久化',
         items: [
@@ -44,7 +49,7 @@ module.exports = {
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           '/spring/springboot',
-          '/Mybatis/'
+          '/guide/dubbo'
         ]
       },
       {
