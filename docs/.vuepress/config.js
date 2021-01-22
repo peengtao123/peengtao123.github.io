@@ -59,6 +59,15 @@ module.exports = {
           '/Hibernate/mongoDb'
         ],
         //initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+      },
+      {
+        title: '基础设施',
+        children: [
+            '/application/docker',
+            '/application/k8s',
+            '/application/linux',
+            '/application/git'
+        ]
       }
     ]
   }
