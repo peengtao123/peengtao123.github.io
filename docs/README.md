@@ -16,4 +16,6 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
 # hello world
+我们来自北方的狼。
 ## 我是社会主义共和国的
+我们来自哪儿？我们要到哪里去/
