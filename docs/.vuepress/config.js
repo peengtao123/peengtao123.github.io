@@ -63,22 +63,25 @@ module.exports = {
       },
       {
         title: '持久化',
+        path: '/data/',
         children: [
-          '/Hibernate/',
-          '/Mybatis/',
-          '/Hibernate/mysql',
-          '/Hibernate/redis',
-          '/Hibernate/mongoDb'
+          '/data/mybatis',
+          '/data/mysql',
+          '/data/hibernate',
+          '/data/redis',
+          '/data/mongoDb'
         ],
         //initialOpenGroupIndex: -1 // 可选的, 默认值是 0
       },
       {
         title: '基础设施',
+        path: '/application/',
         children: [
-            '/application/docker',
-            '/application/k8s',
-            '/application/linux',
-            '/application/git'
+          '/application/docker',
+          '/application/elk',
+          '/application/k8s',
+          '/application/linux',
+          '/application/git'
         ]
       }
     ]
