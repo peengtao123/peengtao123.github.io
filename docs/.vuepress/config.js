@@ -7,11 +7,26 @@ module.exports = {
       {
         text: '持久化',
         items: [
-          { text: 'Mybatis', link: '/Mybatis/' },
+          { text: 'Mybatis', link: 'https://mybatis.org/mybatis-3/zh/index.html' },
           { text: 'Hibernate', link: '/Hibernate/' }
         ]
       },
-      { text: 'External', link: 'https://google.com' },
+      {
+        text: '系统',
+        items: [
+          {text: 'docker',link: 'https://www.runoob.com/docker/docker-tutorial.html'}
+        ]
+      },
+      {
+        text: '前端',
+        items: [
+          {text: 'webpack',link: 'https://webpack.docschina.org/'},
+          {text: 'vue官网',link: 'https://cn.vuejs.org/'},
+          {text: 'Vue CLI',link: 'https://cli.vuejs.org/zh/'},
+          {text: 'Bootstrap',link: 'https://www.bootcss.com/'},
+        ]
+      },
+      { text: 'github', link: 'http://github.com/' },
     ],
     displayAllHeaders: true,
     sidebar: [
