@@ -14,8 +14,32 @@ features:
   details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
-
-# hello world
-我们来自北方的狼。
-## 我是社会主义共和国的
-我们来自哪儿？我们要到哪里去/
+## markdown常用技巧
+## 架构师常见问题
+### 列表
+* 第一项
+* 第二项
+* 第三项
+###区块
+> 最外层
+> > 第一层嵌套
+> > > 第二层嵌套
+>
+### 区块中使用列表
+> 区块中使用列表
+> 1. 第一项
+> 2. 第二项
+> + 第一项
+> + 第二项
+> + 第三项
+### 列表中使用区块
+* 第一项
+    > 菜鸟教程
+    > 学的不仅是技术更是梦想
+* 第二项
+### 代码块
+```javascript
+$(document).ready(function () {
+    alert('RUNOOB');
+});
+```
