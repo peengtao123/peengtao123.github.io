@@ -81,6 +81,8 @@ module.exports = {
           '/application/elk',
           '/application/k8s',
           '/application/linux',
+          '/application/nexus',
+          '/application/maven',
           '/application/git'
         ]
       }
