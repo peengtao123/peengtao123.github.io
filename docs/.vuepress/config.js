@@ -82,6 +82,8 @@ module.exports = {
           '/application/k8s',
           '/application/linux',
           '/application/nexus',
+          '/application/gitlab',
+          '/application/jenkins',
           '/application/maven',
           '/application/git'
         ]
