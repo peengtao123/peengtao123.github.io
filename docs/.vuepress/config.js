@@ -87,6 +87,12 @@ module.exports = {
           '/application/maven',
           '/application/git'
         ]
+      },
+      {
+        title: '前端',
+        children: [
+          '/html'
+        ]
       }
     ]
   }
