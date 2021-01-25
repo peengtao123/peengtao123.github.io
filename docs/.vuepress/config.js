@@ -91,7 +91,7 @@ module.exports = {
       {
         title: '前端',
         children: [
-          '/html'
+          '/html/'
         ]
       }
     ]
