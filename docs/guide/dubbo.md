@@ -1,1 +1,58 @@
 # dubbo
+## 快速开始
+定义接口
+```java
+package org.apache.dubbo.demo;
+
+public interface DemoService {
+    String sayHello(String name);
+}
+```
+服务提供方实现接口
+```java
+package org.apache.dubbo.demo.provider;
+ 
+import org.apache.dubbo.demo.DemoService;
+ 
+public class DemoServiceImpl implements DemoService {
+    public String sayHello(String name) {
+        return "Hello " + name;
+    }
+}
+```
+使用spring配置声明暴露服务
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd        http://dubbo.apache.org/schema/dubbo        http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+ 
+    <!-- 提供方应用信息，用于计算依赖关系 -->
+    <dubbo:application name="hello-world-app"  />
+ 
+    <!-- 使用multicast广播注册中心暴露服务地址 -->
+    <dubbo:registry address="multicast://224.5.6.7:1234" />
+ 
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <dubbo:protocol name="dubbo" port="20880" />
+ 
+    <!-- 声明需要暴露的服务接口 -->
+    <dubbo:service interface="org.apache.dubbo.demo.DemoService" ref="demoService" />
+ 
+    <!-- 和本地bean一样实现服务 -->
+    <bean id="demoService" class="org.apache.dubbo.demo.provider.DemoServiceImpl" />
+</beans>
+```
+加载 Spring 配置
+```java
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+ 
+public class Provider {
+    public static void main(String[] args) throws Exception {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"META-INF/spring/dubbo-demo-provider.xml"});
+        context.start();
+        System.in.read(); // 按任意键退出
+    }
+}
+```
