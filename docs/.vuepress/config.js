@@ -49,7 +49,9 @@ module.exports = {
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           '/spring/springboot',
-          '/guide/dubbo'
+          '/guide/dubbo',
+          '/spring/',
+          '/spring/springCloud'
         ]
       },
       {

@@ -89,3 +89,16 @@ public class Consumer {
     }
 }
 ```
+## 报错
+```xml
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+```
