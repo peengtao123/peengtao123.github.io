@@ -1,5 +1,5 @@
 module.exports = {
-	title: '架构教程',
+	title: '高手聚集地',
 	description: '只是玩玩',
 	head: [
 		['link', {
