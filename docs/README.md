@@ -1,8 +1,8 @@
 ---
 home: true
-heroText: Hero 标题
-tagline: Hero 副标题
-actionText: 快速上手 →
+heroText: 架构师教程
+tagline: 如何成为以为优秀的架构师
+actionText: 快速上手
 actionLink: /guide/
 features:
 - title: 简洁至上

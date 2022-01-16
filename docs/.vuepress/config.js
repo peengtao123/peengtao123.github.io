@@ -13,22 +13,22 @@ module.exports = {
 	plugins: ['@vuepress/back-to-top'],
 	themeConfig: {
 		nav: [{
-				text: 'Home',
+				text: '首页',
 				link: '/'
 			},
 			{
-				text: 'Guide',
+				text: '指导',
 				link: '/guide/'
 			},
 			{
-				text: 'External',
+				text: '外部链接',
 				link: 'https://google.com'
 			},
 		],
 		sidebar: [
-			'/',
-			'/page-a',
-			['/page-b', 'Explicit link text']
+			['/','指导'],
+			['/page-a','sd'],
+			['/page-b', '如何']
 		]
 	}
 }
