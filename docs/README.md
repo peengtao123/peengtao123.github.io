@@ -3,7 +3,7 @@ home: true
 heroText: Hero 标题
 tagline: Hero 副标题
 actionText: 快速上手 →
-actionLink: /zh/guide/
+actionLink: /guide/
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
@@ -16,10 +16,36 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 
 # 架构教程
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+::: tip
+这是一个提示
+:::
 
-:tada: :100:
+::: warning
+这是一个警告
+:::
+
+::: danger
+这是一个危险警告
+:::
+
+::: details
+这是一个详情块，在 IE / Edge 中不生效
+:::
+
+``` js
+export default {
+  name: 'MyComponent',
+  // ...
+}
+```
+
+``` html
+<ul>
+  <li
+    v-for="todo in todos"
+    :key="todo.id"
+  >
+    {{ todo.text }}
+  </li>
+</ul>
+```
