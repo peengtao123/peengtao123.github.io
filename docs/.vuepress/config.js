@@ -1,6 +1,6 @@
 module.exports = {
 	title: '架构教程',
-	description: 'Just playing around',
+	description: '只是玩玩',
 	head: [
 		['link', {
 			rel: 'icon',
@@ -57,6 +57,18 @@ module.exports = {
 				'',
 				'contact',
 				'about'
+			],
+			'/guide/': [
+				'',
+				'contact',
+				'about'
+			],
+			'/vue/': [
+				'',
+				'a'
+			],
+			'/': [
+				''
 			]
 		}
 	}
