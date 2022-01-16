@@ -26,7 +26,7 @@ module.exports = {
 			},
 		],
 		sidebar: [
-			['/','指导'],
+			['/guide/','指导'],
 			['/page-a','sd'],
 			['/page-b', '如何']
 		]
