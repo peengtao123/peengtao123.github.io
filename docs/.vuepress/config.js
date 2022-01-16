@@ -12,10 +12,7 @@ module.exports = {
 	},
 	plugins: ['@vuepress/back-to-top'],
 	themeConfig: {
-		nav: [{
-				text: '首页',
-				link: '/'
-			},
+		nav: [
 			{
 				text: 'docker',
 				link: '/docker/'
@@ -33,11 +30,7 @@ module.exports = {
 				link: '/jvm/'
 			},
 			{
-				text: 'bootstrap',
-				link: '/bootstrap/'
-			},
-			{
-				text: '外部链接',
+				text: '指南',
 				link: '/guide/'
 			},
 		],
