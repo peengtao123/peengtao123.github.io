@@ -14,6 +14,14 @@ module.exports = {
 	themeConfig: {
 		nav: [
 			{
+				text: '指南',
+				link: '/guide/'
+			},
+			{
+				text: 'jvm',
+				link: '/jvm/'
+			},
+			{
 				text: 'docker',
 				link: '/docker/'
 			},
@@ -24,14 +32,6 @@ module.exports = {
 			{
 				text: 'vue',
 				link: '/vue/'
-			},
-			{
-				text: 'JVM',
-				link: '/jvm/'
-			},
-			{
-				text: '指南',
-				link: '/guide/'
 			},
 		],
 		sidebar: {
