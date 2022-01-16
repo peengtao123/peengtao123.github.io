@@ -17,12 +17,28 @@ module.exports = {
 				link: '/'
 			},
 			{
-				text: '指导',
-				link: '/guide/'
+				text: 'docker',
+				link: '/docker/'
+			},
+			{
+				text: 'linux',
+				link: '/linux/'
+			},
+			{
+				text: 'vue',
+				link: '/vue/'
+			},
+			{
+				text: 'JVM',
+				link: '/jvm/'
+			},
+			{
+				text: 'bootstrap',
+				link: '/bootstrap/'
 			},
 			{
 				text: '外部链接',
-				link: 'https://google.com'
+				link: '/guide/'
 			},
 		],
 		sidebar: [
