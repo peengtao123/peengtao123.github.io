@@ -23,6 +23,6 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://peengtao123.github.io
-git push -f git@github.com:peengtao123/peengtao123.github.io.git
+git push -f git@github.com:peengtao123/peengtao123.github.io.git master
 
 cd -
