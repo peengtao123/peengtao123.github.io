@@ -1,5 +1,5 @@
 ---
-home: false
+home: true
 heroText: 架构师教程
 tagline: 如何成为以为优秀的架构师
 actionText: 快速上手
