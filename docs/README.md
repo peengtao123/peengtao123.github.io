@@ -1,9 +1,9 @@
 ---
-home: true
+home: false
 heroText: 架构师教程
 tagline: 如何成为以为优秀的架构师
 actionText: 快速上手
-actionLink: /guide/
+actionLink: /docker/
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。

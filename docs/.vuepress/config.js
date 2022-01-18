@@ -14,54 +14,45 @@ module.exports = {
 	themeConfig: {
 		nav: [
 			{
-				text: '指南',
-				link: '/guide/'
-			},
-			{
-				text: 'jvm',
-				link: '/jvm/'
-			},
-			{
-				text: 'docker',
+				text: '容器技术',
 				link: '/docker/'
 			},
 			{
-				text: 'linux',
-				link: '/linux/'
-			},
-			{
-				text: 'vue',
-				link: '/vue/'
-			},
+				text: '前端技术',
+				link: '/bar/'
+			}
 		],
 		sidebar: {
 			'/docker/': [
-				'',
-				'docker-architecture',
-				'centos-docker-install',
-				'docker-compose'
+				{
+					title: 'Docker 安装',   // 必要的
+					collapsable: false, // 可选的, 默认值是 true,
+					sidebarDepth: 2,    // 可选的, 默认值是 1
+					children: [
+						['ubuntu-docker-install','Ubuntu Docker 安装'],
+						['centos-docker-install','CentOS Docker 安装']
+					]
+				},
+				{
+					title: 'Docker 使用',
+					collapsable: false, // 可选的, 默认值是 true,
+					children: [
+						'docker-hello-world',
+						'docker-container-usage'
+					],
+					initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+				}
 			],
-			'/linux/': [
+			'/bar/': [
 				'',
 				'three',
 				'four'
 			],
-			'/jvm/': [
-				'',
-				'contact',
-				'about'
-			],
-			'/guide/': [
-				'',
-				'contact',
-				'about'
-			],
-			'/vue/': [
-				'',
-				'a'
-			],
+			// fallback
 			'/': [
-				''
+				'',
+				'contact',
+				'about'
 			]
 		}
 	}
