@@ -15,3 +15,4 @@ footer: 欢迎来到fox
 ---
 
 # 高可用怎么实现
+![df](./runoob-logo.png)
