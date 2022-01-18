@@ -12,7 +12,7 @@ curl -sSL https://get.daocloud.io/docker | sh
 ### 卸载旧版本
 Docker 的旧版本被称为 docker，docker.io 或 docker-engine 。如果已安装，请卸载它们：
 ```shell script
-$ sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 当前称为 Docker Engine-Community 软件包 docker-ce 。
 
@@ -22,11 +22,11 @@ $ sudo apt-get remove docker docker-engine docker.io containerd runc
 #### 设置仓库
 更新 apt 包索引。
 ```shell script
-$ sudo apt-get update
+sudo apt-get update
 ```
 安装 apt 依赖包，用于通过HTTPS来获取仓库:
 ```shell script
-$ sudo apt-get install \
+sudo apt-get install \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -35,6 +35,6 @@ $ sudo apt-get install \
 ```
 添加 Docker 的官方 GPG 密钥：
 ```shell script
-$ curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
 ```
 ### 安装 Docker Engine-Community
