@@ -37,8 +37,8 @@ module.exports = {
 					title: 'Docker 使用',
 					collapsable: false, // 可选的, 默认值是 true,
 					children: [
-						'docker-hello-world',
-						'docker-container-usage'
+						['docker-hello-world','Docker Hello World'],
+						['docker-container-usage','Docker 容器使用']
 					],
 					initialOpenGroupIndex: -1 // 可选的, 默认值是 0
 				}
