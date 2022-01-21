@@ -43,7 +43,7 @@ module.exports = {
 					initialOpenGroupIndex: -1 // 可选的, 默认值是 0
 				}
 			],
-			'/bar/': [
+			'/dubbo/': [
 				'',
 				'three',
 				'four'
