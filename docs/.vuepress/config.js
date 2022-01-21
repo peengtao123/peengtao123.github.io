@@ -19,7 +19,7 @@ module.exports = {
 			},
 			{
 				text: '前端技术',
-				link: '/bar/'
+				link: '/dubbo/'
 			}
 		],
 		sidebar: {
