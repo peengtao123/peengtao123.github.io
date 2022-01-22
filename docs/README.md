@@ -15,4 +15,7 @@ footer: 欢迎来到fox
 ---
 
 # 高可用怎么实现
-![df](./runoob-logo.png)
+![图片用法实例](./static/runoob-logo.png)
+* 常见问题
+  * 主线程
+  * 次要线程

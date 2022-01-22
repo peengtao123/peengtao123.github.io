@@ -1,11 +1,5 @@
 #!/usr/bin/env sh
 
-# 提交源码
-git add -A
-git commit -m 'connect'
-git push
-
-
 # 确保脚本抛出遇到的错误
 set -e
 
