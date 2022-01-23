@@ -24,6 +24,10 @@ module.exports = {
             {
                 text: 'dubbo',
                 link: '/dubbo/'
+            },
+            {
+                text: '书籍',
+                link: '/books/'
             }
         ],
         sidebar: {
@@ -66,6 +70,9 @@ module.exports = {
                     ],
                     initialOpenGroupIndex: -1 // 可选的, 默认值是 0
                 }
+            ],
+            '/books/': [
+                ''
             ],
             '/dubbo/': [
                 '',
