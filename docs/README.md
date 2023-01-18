@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: 架构师教程
-tagline: 如何成为以为优秀的架构师
+tagline: 如何成为一位优秀的架构师
 actionText: 快速上手
 actionLink: /docker/ubuntu-docker-install
 features:
@@ -19,3 +19,5 @@ footer: 欢迎来到fox
 * 常见问题
   * 主线程
   * 次要线程
+# 常见问题
+## 什么是

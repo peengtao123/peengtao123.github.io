@@ -28,6 +28,18 @@ module.exports = {
             {
                 text: '书籍',
                 link: '/books/'
+            },
+            {
+                text: '微服务',
+                link: '/services/'
+            },
+            {
+                text: '大数据',
+                link: '/hadoop/'
+            },
+            {
+                text: 'linux',
+                link: '/linux/'
             }
         ],
         sidebar: {
@@ -78,6 +90,19 @@ module.exports = {
                 '',
                 'three',
                 'four'
+            ],
+            '/linux/': [
+                '',
+                'shell'
+            ],
+            '/hadoop/': [
+                '',
+                'one'
+            ],
+            '/services/': [
+                '',
+                'elk',
+                'docker'
             ],
             // fallback
             '/': [
