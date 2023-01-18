@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>shell 常见 问题 | 高手聚集地</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="只是玩玩">
+    
+    <link rel="preload" href="/assets/css/0.styles.b4c82722.css" as="style"><link rel="preload" href="/assets/js/app.246d7e64.js" as="script"><link rel="preload" href="/assets/js/2.db02be8f.js" as="script"><link rel="preload" href="/assets/js/20.6d7e1624.js" as="script"><link rel="prefetch" href="/assets/js/10.e12cedf6.js"><link rel="prefetch" href="/assets/js/11.077f7410.js"><link rel="prefetch" href="/assets/js/12.93b712aa.js"><link rel="prefetch" href="/assets/js/13.41f59728.js"><link rel="prefetch" href="/assets/js/14.1e4e3a73.js"><link rel="prefetch" href="/assets/js/15.612e49a5.js"><link rel="prefetch" href="/assets/js/16.666ce9d9.js"><link rel="prefetch" href="/assets/js/17.ddebcdfe.js"><link rel="prefetch" href="/assets/js/18.857a1381.js"><link rel="prefetch" href="/assets/js/19.82810a4f.js"><link rel="prefetch" href="/assets/js/21.ede8bb54.js"><link rel="prefetch" href="/assets/js/22.331cb148.js"><link rel="prefetch" href="/assets/js/23.2aff23c7.js"><link rel="prefetch" href="/assets/js/24.9f1f5fea.js"><link rel="prefetch" href="/assets/js/25.25030596.js"><link rel="prefetch" href="/assets/js/26.14fccad7.js"><link rel="prefetch" href="/assets/js/27.395b0b67.js"><link rel="prefetch" href="/assets/js/3.ad0d1111.js"><link rel="prefetch" href="/assets/js/4.49ecdfe7.js"><link rel="prefetch" href="/assets/js/5.f0a7ee0e.js"><link rel="prefetch" href="/assets/js/6.809f6739.js"><link rel="prefetch" href="/assets/js/7.014fd6a4.js"><link rel="prefetch" href="/assets/js/8.dbb67049.js"><link rel="prefetch" href="/assets/js/9.98881193.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b4c82722.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">高手聚集地</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/spring/" class="nav-link">
+  spring
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  容器技术
+</a></div><div class="nav-item"><a href="/dubbo/" class="nav-link">
+  dubbo
+</a></div><div class="nav-item"><a href="/books/" class="nav-link">
+  书籍
+</a></div><div class="nav-item"><a href="/services/" class="nav-link">
+  微服务
+</a></div><div class="nav-item"><a href="/hadoop/" class="nav-link">
+  大数据
+</a></div><div class="nav-item"><a href="/linux/" class="nav-link router-link-active">
+  linux
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/spring/" class="nav-link">
+  spring
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  容器技术
+</a></div><div class="nav-item"><a href="/dubbo/" class="nav-link">
+  dubbo
+</a></div><div class="nav-item"><a href="/books/" class="nav-link">
+  书籍
+</a></div><div class="nav-item"><a href="/services/" class="nav-link">
+  微服务
+</a></div><div class="nav-item"><a href="/hadoop/" class="nav-link">
+  大数据
+</a></div><div class="nav-item"><a href="/linux/" class="nav-link router-link-active">
+  linux
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/linux/" aria-current="page" class="sidebar-link">linux知识</a></li><li><a href="/linux/shell.html" aria-current="page" class="active sidebar-link">shell 常见 问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux/shell.html#区分shell中的-反引号、-和" class="sidebar-link">区分shell中的 反引号、$()和${}</a></li><li class="sidebar-sub-header"><a href="/linux/shell.html#shell中特殊字符的用法总结大全" class="sidebar-link">Shell中特殊字符的用法总结大全</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="shell-常见-问题"><a href="#shell-常见-问题" class="header-anchor">#</a> shell 常见 问题</h1> <h2 id="区分shell中的-反引号、-和"><a href="#区分shell中的-反引号、-和" class="header-anchor">#</a> 区分shell中的 反引号、$()和${}</h2> <ol><li>反引号和$()的用于命令替换
+命令替换</li> <li>${}用于变量替换
+2.1 直接变量替换
+2.2 特殊变量替换</li></ol> <h2 id="shell中特殊字符的用法总结大全"><a href="#shell中特殊字符的用法总结大全" class="header-anchor">#</a> Shell中特殊字符的用法总结大全</h2> <ol><li>；分号
+连续运行命令</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># ifdown eth0;ifup eth0</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="2"><li>| 管道
+正则表达式中表示或者</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code># echo &quot;ooooee&quot; |egrep '(oo|ee)'{2} 表示匹配 oooo 或者 eeee 的字符
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>前面命令的标准输出作为后面命令的标准输入</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ifconfig|grep eth0 表示ifconfig查出来的信息然后过滤出eth0的这一行
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="3"><li>&amp;
+将命令放到后台执行</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code># mysqld_safe --user=mysql &amp; 将MySQL放到后台启动
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>表示标准输出和标准错误输出</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># ifconfig &amp;&gt;/dev/null 将ifconfig执行得到的结果输出到/dev/null里面
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="4"><li>&amp;&amp;
+前面命令返回值为0才执行后面的命令</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code># ls &amp;&amp; echo &quot;ok&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="5"><li>||
+前面命令返回值为非0才执行后面的命令</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code># lls || echo &quot;ok&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="6"><li>#井号
+# 表示注释</li></ol> <p>$# 表示位置参数的个数</p> <h1 id="echo"><a href="#echo" class="header-anchor">#</a> echo $#</h1> <p>${#变量名} 表示变量的长度</p> <h1 id="a-hello"><a href="#a-hello" class="header-anchor">#</a> a='hello'</h1> <h1 id="echo-a"><a href="#echo-a" class="header-anchor">#</a> echo ${#a}</h1> <p>${#变量名[@]} 表示数组的个数</p> <h1 id="a-1-2-3"><a href="#a-1-2-3" class="header-anchor">#</a> a=(1 2 3)</h1> <h1 id="echo-a-2"><a href="#echo-a-2" class="header-anchor">#</a> echo ${#a[@]}</h1> <ol start="7"><li>！惊叹号
+将命令或者条件表达式的返回值取反
+1
+2</li></ol> <h1 id="if-1-2-then-echo-ok-else-echo-no-fi"><a href="#if-1-2-then-echo-ok-else-echo-no-fi" class="header-anchor">#</a> if ! [ 1&lt;2 ]; then echo 'ok'; else echo 'no'; fi</h1> <p>ok
+执行历史命令
+1
+2
+3
+4
+5
+6
+7
+8
+9</p> <h1 id="history"><a href="#history" class="header-anchor">#</a> history</h1> <p>1 ls
+2 tail test1.txt
+3 mysql -uroot -p123
+4 ls /tmp/
+5 cd /tmp/
+[root@localhost ~]# !994
+ls /tmp/
+account.sql data.sql mysql.sock t1.txt t2.txt
+vi或者ftp中执行外部shell命令
+例如：在vim中，想要执行一条命令，就在末行模式，输入！感叹号后面加上要执行的命令
+间接应用变量
+例如：${!a} ---- 间接取b 的值
+8. $ 美元符号
+取变量的值
+1
+2
+3</p> <h1 id="a-10"><a href="#a-10" class="header-anchor">#</a> a=10</h1> <h1 id="echo-a-3"><a href="#echo-a-3" class="header-anchor">#</a> echo $a</h1> <p>10
+正则表达式表示行尾
+1
+2
+egrep '😒' /etc/inittab
+egrep ‘^hello$' file
+9. &gt; 大于号
+输出重定向
+1
+echo '123' &gt;test.txt 表示将123 输入到文件test.txt中 条件测试中的大于号
+11. &lt; 小于号
+输入重定向
+条件测试中的小于号
+= 等号
+变量赋值 - 例如：设置变量a=10
+条件测试中的等号 - 例如：[ a=b ] 判断变量a是否等于b
+数值比较 == - 例如：(( a==20 )) 判断变量a是否等于20
+12. + 加号
+算术运算中的加号 - 例如：1+3
+正则表达式中1个或多个前面的字符 - 例如：ab+c 表示匹配ab和c之间有1个或者多个 字符
+13. &gt;&gt;
+输出重定向追加 - 例如：echo &quot;123&quot; &gt;&gt; test.txt 将123追加到文件test.txt中
+14. &lt;&lt;
+here document
+例如：
+1
+2
+3
+4</p> <h1 id="passwd-end"><a href="#passwd-end" class="header-anchor">#</a> passwd &lt;&lt;end</h1> <blockquote><p>123
+123
+end
+更改用户 root 的密码 。</p></blockquote> <ol start="15"><li><ul><li>减号
+算术运算中的减号 - 例如：10-2
+命令的选项 - 例如：ls -l
+上一次工作目录 - 例如：cd -
+通配符和正则表达式中表示范围 - 例如：[a-z]
+1
+tar -cvf - /home | tar -xvf -
+表示输出流或输入流
+将前面的输出 ，通过管道交给后面的命令，前面的压缩，后面的解压</li></ul></li> <li>'' 单引号
+解决变量赋值空格的问题
+例如：a='1 2'
+阻止shell替换</li> <li>&quot;&quot; 双引号
+解决变量赋值空格的问题
+例如：a=&quot;1 2&quot;
+阻止shell部分字符替换，对$、！等无效</li> <li>`` 反引号 相当于 $()
+命令行替换
+例如：可以设变量a=<code>ls</code></li> <li>% 百分号
+算术运算中的模运算
+例如：echo $((100%10)) 就是100除以10的余数为0
+vi中替换操作中表示所有行 （末行模式下，替换所有前面加 %）
+例如：在末行模式下输入 :% s/D/d 表示将文本中的所有的D替换为d</li> <li>() 单圆括号</li></ol> <p>子shell中执行命令，会继承父shell的变量
+括起数组元素
+例如：定义一个数组 a=(1 2 3 4)
+21. (()) 双圆括号
+算术运算
+例如： echo $((10/2)) 结果就是5
+整数比较测试
+例如： (( 10&gt;2 )) 判断10是否大于2
+22. [] 单方括号
+通配符和正则中表示匹配括号中的任意一个字符
+例如： [abc] 表示匹配abc中的任意一个字符
+条件测试表达式
+例如： [ -f /etc/passwd ] // 测试是不是文件
+数组中下标括号
+例如：echo ${a[0]} 表示取数组中下标为0的值
+23. [[]] 双方括号
+字符串比较测试
+例如： [[a=b]] 用来字符串的比较
+24. . 英文句点号
+正则中表示任意1个字符
+例如：a...b 表示 匹配 a和b之间夹三个字符的字符串
+当前shell执行脚本命令
+例如： ./test.sh 执行当前路径下的shell脚本test.sh
+表示当前目录
+例如：cd ./bgk 进入当前目录下的bgk目录下
+25. {} 大括号
+通配符扩展 abc{1,2,3}
+正则表达式中表示范围
+例如：a{3} 匹配3个 a
+for i in {1...10} 循环指定范围
+匿名函数{ cmd1；cmd2；cmd3；} &amp;&gt; /dev/null
+{ } 里面的命令，是在当前shell执行
+注意： { } 第一条命令前面要有空格，后面的命令要有分号
+括起变量名 ${abc}a
+26. / 正斜杠
+算术运算中的除法
+例如：echo $((10/2)) 结果就是5
+根目录或路径分割符
+例如：cd /usr/local/ 表示路径
+27. ^
+在通配符中表示取反
+例如：[^abc] 表示匹配除了abc外的任意一个字符
+在正则表达式中表示以什么开头
+例如：
+1
+egrep ‘^hello$' file
+总结</p> <p>好了，以上就是这篇文章的全部内容了，希望本文的内容对大家的学习或者工作能带来一定的帮助，如果有疑问大家可以留言交流，谢谢大家对脚本之家的支持。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/linux/" class="prev router-link-active">
+        linux知识
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.246d7e64.js" defer></script><script src="/assets/js/2.db02be8f.js" defer></script><script src="/assets/js/20.6d7e1624.js" defer></script>
+  </body>
+</html>
