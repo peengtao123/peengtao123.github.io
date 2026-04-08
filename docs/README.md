@@ -8,7 +8,7 @@ actions:
     type: primary
 
   - text: 介绍
-    link: https://vuejs.press/guide/introduction.html
+    link: https://www.runoob.com/docker/docker-desktop.html
     type: secondary
 
 features:
@@ -28,6 +28,5 @@ features:
 footer: MIT 许可证 | 版权 © 2018-至今 VuePress 社区
 ---
 
-这是首页的内容。查看[首页文档][default-theme-home]以获取更多详细信息。
 
 [default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
