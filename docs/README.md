@@ -1,7 +1,7 @@
 ---
 home: true
 title: 首页
-heroImage: https://vuejs.press/images/hero.png
+heroImage: /logo.webp
 actions:
   - text: 开始使用
     link: /get-started.html
