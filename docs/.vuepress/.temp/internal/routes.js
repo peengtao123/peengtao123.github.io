@@ -1,8 +1,8 @@
 export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
-  ["/get-started.html", { loader: () => import(/* webpackChunkName: "get-started.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/get-started.html.js"), meta: {"title":"Get Started"} }],
-  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Home"} }],
+  ["/get-started.html", { loader: () => import(/* webpackChunkName: "get-started.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/get-started.html.js"), meta: {"title":"开始使用"} }],
+  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"首页"} }],
   ["/posts/archive1.html", { loader: () => import(/* webpackChunkName: "posts_archive1.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/posts/archive1.html.js"), meta: {"_blog":{"title":"Archive Article1","author":"","date":"1998-01-01T00:00:00.000Z","category":["History"],"tag":["WWI"],"excerpt":"\n<h2>Heading 2</h2>\n<p>Here is the content.</p>\n<h3>Heading 3</h3>\n<p>Here is the content.</p>\n"},"title":"Archive Article1"} }],
   ["/posts/archive2.html", { loader: () => import(/* webpackChunkName: "posts_archive2.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/posts/archive2.html.js"), meta: {"_blog":{"title":"Archive Article2","author":"","date":"1998-01-02T00:00:00.000Z","category":["History"],"tag":["WWII"],"excerpt":"\n<h2>Heading 2</h2>\n<p>Here is the content.</p>\n<h3>Heading 3</h3>\n<p>Here is the content.</p>\n"},"title":"Archive Article2"} }],
   ["/posts/article1.html", { loader: () => import(/* webpackChunkName: "posts_article1.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/posts/article1.html.js"), meta: {"_blog":{"title":"Article 1","author":"","date":"2022-01-01T00:00:00.000Z","category":["Category A"],"tag":["tag A","tag B"],"excerpt":"\n<h2>Heading 2</h2>\n<p>Here is the content.</p>\n<h3>Heading 3</h3>\n<p>Here is the content.</p>\n"},"title":"Article 1"} }],
@@ -20,19 +20,36 @@ export const routes = Object.fromEntries([
   ["/posts/sticky.html", { loader: () => import(/* webpackChunkName: "posts_sticky.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/posts/sticky.html.js"), meta: {"_blog":{"title":"Sticky Article","author":"","date":"2021-01-01T00:00:00.000Z","category":["Category C"],"tag":["tag E"],"excerpt":"<p>A sticky article demo.</p>"},"title":"Sticky Article"} }],
   ["/posts/sticky2.html", { loader: () => import(/* webpackChunkName: "posts_sticky2.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/posts/sticky2.html.js"), meta: {"_blog":{"title":"Sticky Article with Higher Priority","author":"","date":"2020-01-01T00:00:00.000Z","category":["Category C"],"tag":["tag E"],"excerpt":"\n<p>Excerpt information which is added manually.</p>\n"},"title":"Sticky Article with Higher Priority"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
-  ["/category/", { loader: () => import(/* webpackChunkName: "category_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/category/index.html.js"), meta: {"title":"Categories"} }],
-  ["/category/history/", { loader: () => import(/* webpackChunkName: "category_history_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/category/history/index.html.js"), meta: {"title":"Category History"} }],
-  ["/category/category-a/", { loader: () => import(/* webpackChunkName: "category_category-a_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/category/category-a/index.html.js"), meta: {"title":"Category Category A"} }],
-  ["/category/category-b/", { loader: () => import(/* webpackChunkName: "category_category-b_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/category/category-b/index.html.js"), meta: {"title":"Category Category B"} }],
-  ["/category/category-c/", { loader: () => import(/* webpackChunkName: "category_category-c_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/category/category-c/index.html.js"), meta: {"title":"Category Category C"} }],
-  ["/tag/", { loader: () => import(/* webpackChunkName: "tag_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/index.html.js"), meta: {"title":"Tags"} }],
-  ["/tag/wwi/", { loader: () => import(/* webpackChunkName: "tag_wwi_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/wwi/index.html.js"), meta: {"title":"Tag WWI"} }],
-  ["/tag/wwii/", { loader: () => import(/* webpackChunkName: "tag_wwii_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/wwii/index.html.js"), meta: {"title":"Tag WWII"} }],
-  ["/tag/tag-a/", { loader: () => import(/* webpackChunkName: "tag_tag-a_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/tag-a/index.html.js"), meta: {"title":"Tag tag A"} }],
-  ["/tag/tag-b/", { loader: () => import(/* webpackChunkName: "tag_tag-b_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/tag-b/index.html.js"), meta: {"title":"Tag tag B"} }],
-  ["/tag/tag-c/", { loader: () => import(/* webpackChunkName: "tag_tag-c_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/tag-c/index.html.js"), meta: {"title":"Tag tag C"} }],
-  ["/tag/tag-d/", { loader: () => import(/* webpackChunkName: "tag_tag-d_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/tag-d/index.html.js"), meta: {"title":"Tag tag D"} }],
-  ["/tag/tag-e/", { loader: () => import(/* webpackChunkName: "tag_tag-e_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/tag-e/index.html.js"), meta: {"title":"Tag tag E"} }],
-  ["/article/", { loader: () => import(/* webpackChunkName: "article_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/article/index.html.js"), meta: {"title":"Articles"} }],
-  ["/timeline/", { loader: () => import(/* webpackChunkName: "timeline_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/timeline/index.html.js"), meta: {"title":"Timeline"} }],
+  ["/category/", { loader: () => import(/* webpackChunkName: "category_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/category/index.html.js"), meta: {"title":"分类"} }],
+  ["/category/history/", { loader: () => import(/* webpackChunkName: "category_history_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/category/history/index.html.js"), meta: {"title":"分类 History"} }],
+  ["/category/category-a/", { loader: () => import(/* webpackChunkName: "category_category-a_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/category/category-a/index.html.js"), meta: {"title":"分类 Category A"} }],
+  ["/category/category-b/", { loader: () => import(/* webpackChunkName: "category_category-b_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/category/category-b/index.html.js"), meta: {"title":"分类 Category B"} }],
+  ["/category/category-c/", { loader: () => import(/* webpackChunkName: "category_category-c_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/category/category-c/index.html.js"), meta: {"title":"分类 Category C"} }],
+  ["/tag/", { loader: () => import(/* webpackChunkName: "tag_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/index.html.js"), meta: {"title":"标签"} }],
+  ["/tag/wwi/", { loader: () => import(/* webpackChunkName: "tag_wwi_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/wwi/index.html.js"), meta: {"title":"标签 WWI"} }],
+  ["/tag/wwii/", { loader: () => import(/* webpackChunkName: "tag_wwii_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/wwii/index.html.js"), meta: {"title":"标签 WWII"} }],
+  ["/tag/tag-a/", { loader: () => import(/* webpackChunkName: "tag_tag-a_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/tag-a/index.html.js"), meta: {"title":"标签 tag A"} }],
+  ["/tag/tag-b/", { loader: () => import(/* webpackChunkName: "tag_tag-b_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/tag-b/index.html.js"), meta: {"title":"标签 tag B"} }],
+  ["/tag/tag-c/", { loader: () => import(/* webpackChunkName: "tag_tag-c_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/tag-c/index.html.js"), meta: {"title":"标签 tag C"} }],
+  ["/tag/tag-d/", { loader: () => import(/* webpackChunkName: "tag_tag-d_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/tag-d/index.html.js"), meta: {"title":"标签 tag D"} }],
+  ["/tag/tag-e/", { loader: () => import(/* webpackChunkName: "tag_tag-e_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/tag-e/index.html.js"), meta: {"title":"标签 tag E"} }],
+  ["/article/", { loader: () => import(/* webpackChunkName: "article_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/article/index.html.js"), meta: {"title":"文章"} }],
+  ["/timeline/", { loader: () => import(/* webpackChunkName: "timeline_index.html" */"D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/timeline/index.html.js"), meta: {"title":"时间线"} }],
 ]);
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateRoutes) {
+    __VUE_HMR_RUNTIME__.updateRoutes(routes)
+  }
+  if (__VUE_HMR_RUNTIME__.updateRedirects) {
+    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ routes, redirects }) => {
+    __VUE_HMR_RUNTIME__.updateRoutes(routes)
+    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
+  })
+}

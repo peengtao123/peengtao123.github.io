@@ -5,30 +5,30 @@ import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   base: '/aaa/',
-  lang: 'en-US',
+  lang: 'zh-CN',
 
   title: 'VuePress',
-  description: 'My first VuePress Site',
+  description: '我的第一个VuePress站点',
 
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: '/logo.webp',
 
     navbar: [
       '/',
       {
-        text: 'Article',
+        text: '文章',
         link: '/article/',
       },
       {
-        text: 'Category',
+        text: '分类',
         link: '/category/',
       },
       {
-        text: 'Tag',
+        text: '标签',
         link: '/tag/',
       },
       {
-        text: 'Timeline',
+        text: '时间线',
         link: '/timeline/',
       },
     ],
@@ -36,11 +36,11 @@ export default defineUserConfig({
 
   plugins: [
     blogPlugin({
-      // Only files under posts are articles
+      // 只有posts下的文件是文章
       filter: ({ filePathRelative }) =>
         filePathRelative ? filePathRelative.startsWith('posts/') : false,
 
-      // Getting article info
+      // 获取文章信息
       getInfo: ({ frontmatter, title, data }) => ({
         title,
         author: frontmatter.author || '',
@@ -48,13 +48,13 @@ export default defineUserConfig({
         category: frontmatter.category || [],
         tag: frontmatter.tag || [],
         excerpt:
-          // Support manually set excerpt through frontmatter
+          // 通过frontmatter支持手动设置摘录
           typeof frontmatter.excerpt === 'string'
             ? frontmatter.excerpt
             : data?.excerpt || '',
       }),
 
-      // Generate excerpt for all pages excerpt those users choose to disable
+      // 为所有页面生成摘录，除了用户选择禁用的页面
       excerptFilter: ({ frontmatter }) =>
         !frontmatter.home &&
         frontmatter.excerpt !== false &&
@@ -67,11 +67,11 @@ export default defineUserConfig({
           layout: 'Category',
           itemLayout: 'Category',
           frontmatter: () => ({
-            title: 'Categories',
+            title: '分类',
             sidebar: false,
           }),
           itemFrontmatter: (name) => ({
-            title: `Category ${name}`,
+            title: `分类 ${name}`,
             sidebar: false,
           }),
         },
@@ -81,11 +81,11 @@ export default defineUserConfig({
           layout: 'Tag',
           itemLayout: 'Tag',
           frontmatter: () => ({
-            title: 'Tags',
+            title: '标签',
             sidebar: false,
           }),
           itemFrontmatter: (name) => ({
-            title: `Tag ${name}`,
+            title: `标签 ${name}`,
             sidebar: false,
           }),
         },
@@ -94,14 +94,14 @@ export default defineUserConfig({
       type: [
         {
           key: 'article',
-          // Remove archive articles
+          // 移除存档文章
           filter: (page) => !page.frontmatter.archive,
           layout: 'Article',
           frontmatter: () => ({
-            title: 'Articles',
+            title: '文章',
             sidebar: false,
           }),
-          // Sort pages with time and sticky
+          // 按时间和置顶排序页面
           sorter: (pageA, pageB) => {
             if (pageA.frontmatter.sticky && pageB.frontmatter.sticky)
               return pageB.frontmatter.sticky - pageA.frontmatter.sticky
@@ -121,15 +121,15 @@ export default defineUserConfig({
         },
         {
           key: 'timeline',
-          // Only article with date should be added to timeline
+          // 只有带有日期的文章才会被添加到时间线
           filter: (page) => page.frontmatter.date instanceof Date,
-          // Sort pages with time
+          // 按时间排序页面
           sorter: (pageA, pageB) =>
             new Date(pageB.frontmatter.date).getTime() -
             new Date(pageA.frontmatter.date).getTime(),
           layout: 'Timeline',
           frontmatter: () => ({
-            title: 'Timeline',
+            title: '时间线',
             sidebar: false,
           }),
         },
