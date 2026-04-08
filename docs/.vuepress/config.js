@@ -7,7 +7,7 @@ export default defineUserConfig({
   base: '/aaa/',
   lang: 'zh-CN',
 
-  title: 'VuePress',
+  title: '丑八怪',
   description: '我的第一个VuePress站点',
 
   theme: defaultTheme({
