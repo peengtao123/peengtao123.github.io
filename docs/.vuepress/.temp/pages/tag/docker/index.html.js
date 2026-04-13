@@ -1,4 +1,4 @@
-import comp from "D:/桌面/peengtao123.github.io/docs/.vuepress/.temp/pages/tag/docker/index.html.vue"
+import comp from "D:/桌面/chu/docs/.vuepress/.temp/pages/tag/docker/index.html.vue"
 const data = JSON.parse("{\"path\":\"/tag/docker/\",\"title\":\"标签 Docker\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"标签 Docker\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"Docker\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 

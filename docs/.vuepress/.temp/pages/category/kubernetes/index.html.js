@@ -1,4 +1,4 @@
-import comp from "D:/桌面/peengtao123.github.io/docs/.vuepress/.temp/pages/category/kubernetes/index.html.vue"
+import comp from "D:/桌面/chu/docs/.vuepress/.temp/pages/category/kubernetes/index.html.vue"
 const data = JSON.parse("{\"path\":\"/category/kubernetes/\",\"title\":\"分类 Kubernetes\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"分类 Kubernetes\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"Kubernetes\",\"key\":\"category\"},\"layout\":\"Category\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 

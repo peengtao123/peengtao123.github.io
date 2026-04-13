@@ -1,4 +1,4 @@
-import comp from "D:/桌面/peengtao123.github.io/docs/.vuepress/.temp/pages/tag/python/index.html.vue"
+import comp from "D:/桌面/chu/docs/.vuepress/.temp/pages/tag/python/index.html.vue"
 const data = JSON.parse("{\"path\":\"/tag/python/\",\"title\":\"标签 Python\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"标签 Python\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"Python\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 

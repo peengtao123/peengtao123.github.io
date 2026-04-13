@@ -1,5 +1,5 @@
-import { GitContributors } from "D:/桌面/peengtao123.github.io/node_modules/@vuepress/plugin-git/lib/client/components/GitContributors.js";
-import { GitChangelog } from "D:/桌面/peengtao123.github.io/node_modules/@vuepress/plugin-git/lib/client/components/GitChangelog.js";
+import { GitContributors } from "D:/桌面/chu/node_modules/@vuepress/plugin-git/lib/client/components/GitContributors.js";
+import { GitChangelog } from "D:/桌面/chu/node_modules/@vuepress/plugin-git/lib/client/components/GitChangelog.js";
 
 export default {
   enhance: ({ app }) => {

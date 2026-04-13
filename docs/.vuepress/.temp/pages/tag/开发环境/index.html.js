@@ -1,4 +1,4 @@
-import comp from "D:/桌面/peengtao123.github.io/docs/.vuepress/.temp/pages/tag/开发环境/index.html.vue"
+import comp from "D:/桌面/chu/docs/.vuepress/.temp/pages/tag/开发环境/index.html.vue"
 const data = JSON.parse("{\"path\":\"/tag/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/\",\"title\":\"标签 开发环境\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"标签 开发环境\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"开发环境\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 
