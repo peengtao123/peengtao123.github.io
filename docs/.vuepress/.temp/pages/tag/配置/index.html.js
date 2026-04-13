@@ -1,4 +1,4 @@
-import comp from "D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/配置/index.html.vue"
+import comp from "D:/桌面/peengtao123.github.io/docs/.vuepress/.temp/pages/tag/配置/index.html.vue"
 const data = JSON.parse("{\"path\":\"/tag/%E9%85%8D%E7%BD%AE/\",\"title\":\"标签 配置\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"标签 配置\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"配置\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 

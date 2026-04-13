@@ -1,4 +1,4 @@
-import comp from "D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/devops/index.html.vue"
+import comp from "D:/桌面/peengtao123.github.io/docs/.vuepress/.temp/pages/tag/devops/index.html.vue"
 const data = JSON.parse("{\"path\":\"/tag/devops/\",\"title\":\"标签 DevOps\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"标签 DevOps\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"DevOps\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 

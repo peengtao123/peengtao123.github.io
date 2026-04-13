@@ -1,4 +1,4 @@
-import comp from "D:/aaa/vuepress-starter/docs/.vuepress/.temp/pages/tag/入门/index.html.vue"
+import comp from "D:/桌面/peengtao123.github.io/docs/.vuepress/.temp/pages/tag/入门/index.html.vue"
 const data = JSON.parse("{\"path\":\"/tag/%E5%85%A5%E9%97%A8/\",\"title\":\"标签 入门\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"标签 入门\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"入门\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 
