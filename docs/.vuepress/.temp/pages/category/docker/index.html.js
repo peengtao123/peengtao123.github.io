@@ -1,4 +1,4 @@
-import comp from "D:/桌面/chu/docs/.vuepress/.temp/pages/category/docker/index.html.vue"
+import comp from "D:/桌面/start/docs/.vuepress/.temp/pages/category/docker/index.html.vue"
 const data = JSON.parse("{\"path\":\"/category/docker/\",\"title\":\"分类 Docker\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"分类 Docker\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"Docker\",\"key\":\"category\"},\"layout\":\"Category\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 
