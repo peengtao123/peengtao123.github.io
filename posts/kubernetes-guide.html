@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>Kubernetes 入门手册 | 丑八怪</title><meta name="description" content="我的第一个VuePress站点">
+    <link rel="preload" href="/assets/style-QXEKf4Y2.css" as="style"><link rel="stylesheet" href="/assets/style-QXEKf4Y2.css">
+    <link rel="modulepreload" href="/assets/app-DWFb6zmK.js"><link rel="modulepreload" href="/assets/kubernetes-guide.html-NsZpkVfU.js">
+    <link rel="prefetch" href="/assets/index.html-BCi4z_T7.js" as="script"><link rel="prefetch" href="/assets/get-started.html-CMFI_jML.js" as="script"><link rel="prefetch" href="/assets/developer-env-guide.html-BGmquYqz.js" as="script"><link rel="prefetch" href="/assets/docker-guide.html-CWy2TcDQ.js" as="script"><link rel="prefetch" href="/assets/docker-install.html-VJbv7OY3.js" as="script"><link rel="prefetch" href="/assets/wsl-guide.html-DOW7vKn3.js" as="script"><link rel="prefetch" href="/assets/404.html-D_nUR8qP.js" as="script"><link rel="prefetch" href="/assets/index.html-BAIDru-4.js" as="script"><link rel="prefetch" href="/assets/index.html-DNNLqWlx.js" as="script"><link rel="prefetch" href="/assets/index.html-HVeJxIh2.js" as="script"><link rel="prefetch" href="/assets/index.html-C39tjdL3.js" as="script"><link rel="prefetch" href="/assets/index.html-t9_9v3Ai.js" as="script"><link rel="prefetch" href="/assets/index.html-o0NWM0dV.js" as="script"><link rel="prefetch" href="/assets/index.html-BZgw5YdI.js" as="script"><link rel="prefetch" href="/assets/index.html-CvuQY3Mh.js" as="script"><link rel="prefetch" href="/assets/index.html-B_yWORm8.js" as="script"><link rel="prefetch" href="/assets/index.html-Di3xuTXB.js" as="script"><link rel="prefetch" href="/assets/index.html-C2gD3caT.js" as="script"><link rel="prefetch" href="/assets/index.html-X7BkEJgt.js" as="script"><link rel="prefetch" href="/assets/index.html-BJulQux1.js" as="script"><link rel="prefetch" href="/assets/index.html-D-kcdFsL.js" as="script"><link rel="prefetch" href="/assets/index.html-BusKetBT.js" as="script"><link rel="prefetch" href="/assets/index.html-CJ0WuUh3.js" as="script"><link rel="prefetch" href="/assets/index.html-BdfodVa7.js" as="script"><link rel="prefetch" href="/assets/index.html-DeNGaYXV.js" as="script"><link rel="prefetch" href="/assets/index.html-C16BLzTW.js" as="script"><link rel="prefetch" href="/assets/index.html-djdv2jCh.js" as="script"><link rel="prefetch" href="/assets/index.html-D5nd8e0Q.js" as="script"><link rel="prefetch" href="/assets/index.html-DnpUtybJ.js" as="script"><link rel="prefetch" href="/assets/index.html-mAg3BjpD.js" as="script"><link rel="prefetch" href="/assets/index.html-B4m4onxb.js" as="script"><link rel="prefetch" href="/assets/index.html-J9H6BWOE.js" as="script"><link rel="prefetch" href="/assets/index.html-B5ZvCUYN.js" as="script"><link rel="prefetch" href="/assets/index.html-D7vUwEWW.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container external-link-icon" vp-container><!--[--><header class="vp-navbar" vp-navbar><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/"><img class="vp-site-logo" src="/logo.webp" alt="丑八怪"><span class="vp-site-name vp-hide-mobile" aria-hidden="true">丑八怪</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><nav class="vp-navbar-items vp-hide-mobile" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="技术分享博客"><!--[--><!--[--><!--]--><!--]-->技术分享博客<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/article/" aria-label="文章"><!--[--><!--[--><!--]--><!--]-->文章<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/category/" aria-label="分类"><!--[--><!--[--><!--]--><!--]-->分类<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/tag/" aria-label="标签"><!--[--><!--[--><!--]--><!--]-->标签<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/timeline/" aria-label="时间线"><!--[--><!--[--><!--]--><!--]-->时间线<!--[--><!--[--><!--]--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button type="button" class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><nav class="vp-navbar-items" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="技术分享博客"><!--[--><!--[--><!--]--><!--]-->技术分享博客<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/article/" aria-label="文章"><!--[--><!--[--><!--]--><!--]-->文章<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/category/" aria-label="分类"><!--[--><!--[--><!--]--><!--]-->分类<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/tag/" aria-label="标签"><!--[--><!--[--><!--]--><!--]-->标签<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/timeline/" aria-label="时间线"><!--[--><!--[--><!--]--><!--]-->时间线<!--[--><!--[--><!--]--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="vp-sidebar-items"><!--[--><li><p tabindex="0" class="vp-sidebar-item vp-sidebar-heading">Kubernetes 入门手册 <!----></p><!----></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div vp-content><!--[--><!--]--><div><h1 id="kubernetes-入门手册" tabindex="-1"><a class="header-anchor" href="#kubernetes-入门手册"><span>Kubernetes 入门手册</span></a></h1><h2 id="什么是-kubernetes" tabindex="-1"><a class="header-anchor" href="#什么是-kubernetes"><span>什么是 Kubernetes？</span></a></h2><p>Kubernetes（简称 K8s）是一个开源的容器编排平台，用于自动化部署、扩展和管理容器化应用程序。它由 Google 设计并捐赠给 Cloud Native Computing Foundation (CNCF)。</p><h3 id="核心概念" tabindex="-1"><a class="header-anchor" href="#核心概念"><span>核心概念</span></a></h3><ul><li><strong>Pod</strong>: Kubernetes 中最小的部署单元，包含一个或多个容器</li><li><strong>Node</strong>: 工作机器，可以是物理机或虚拟机</li><li><strong>Cluster</strong>: 一组 Node 的集合，由 Master 节点管理</li><li><strong>Service</strong>: 定义一组 Pod 的访问方式</li><li><strong>Deployment</strong>: 声明式地管理 Pod 的副本</li></ul><h2 id="安装-kubernetes" tabindex="-1"><a class="header-anchor" href="#安装-kubernetes"><span>安装 Kubernetes</span></a></h2><h3 id="使用-minikube-本地开发" tabindex="-1"><a class="header-anchor" href="#使用-minikube-本地开发"><span>使用 Minikube（本地开发）</span></a></h3><p>Minikube 可以在本地运行单节点 Kubernetes 集群。</p><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token comment"># 安装 Minikube</span></span>
+<span class="line"><span class="token function">curl</span> <span class="token parameter variable">-LO</span> https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64</span>
+<span class="line"><span class="token function">sudo</span> <span class="token function">install</span> minikube-linux-amd64 /usr/local/bin/minikube</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 启动集群</span></span>
+<span class="line">minikube start</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 检查状态</span></span>
+<span class="line">minikube status</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="使用-kubeadm-生产环境" tabindex="-1"><a class="header-anchor" href="#使用-kubeadm-生产环境"><span>使用 kubeadm（生产环境）</span></a></h3><p>对于多节点集群，使用 kubeadm：</p><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token comment"># 初始化主节点</span></span>
+<span class="line"><span class="token function">sudo</span> kubeadm init</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 配置 kubectl</span></span>
+<span class="line"><span class="token function">mkdir</span> <span class="token parameter variable">-p</span> <span class="token environment constant">$HOME</span>/.kube</span>
+<span class="line"><span class="token function">sudo</span> <span class="token function">cp</span> <span class="token parameter variable">-i</span> /etc/kubernetes/admin.conf <span class="token environment constant">$HOME</span>/.kube/config</span>
+<span class="line"><span class="token function">sudo</span> <span class="token function">chown</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> <span class="token parameter variable">-u</span><span class="token variable">)</span></span><span class="token builtin class-name">:</span><span class="token variable"><span class="token variable">$(</span><span class="token function">id</span> <span class="token parameter variable">-g</span><span class="token variable">)</span></span> <span class="token environment constant">$HOME</span>/.kube/config</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="基本命令" tabindex="-1"><a class="header-anchor" href="#基本命令"><span>基本命令</span></a></h2><h3 id="kubectl-常用命令" tabindex="-1"><a class="header-anchor" href="#kubectl-常用命令"><span>kubectl 常用命令</span></a></h3><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token comment"># 查看集群信息</span></span>
+<span class="line">kubectl cluster-info</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 查看节点</span></span>
+<span class="line">kubectl get nodes</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 查看 Pod</span></span>
+<span class="line">kubectl get pods</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 查看服务</span></span>
+<span class="line">kubectl get services</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 创建资源</span></span>
+<span class="line">kubectl create <span class="token parameter variable">-f</span> deployment.yaml</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 应用配置</span></span>
+<span class="line">kubectl apply <span class="token parameter variable">-f</span> deployment.yaml</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 查看日志</span></span>
+<span class="line">kubectl logs <span class="token operator">&lt;</span>pod-name<span class="token operator">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 进入容器</span></span>
+<span class="line">kubectl <span class="token builtin class-name">exec</span> <span class="token parameter variable">-it</span> <span class="token operator">&lt;</span>pod-name<span class="token operator">&gt;</span> -- /bin/bash</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="创建第一个应用" tabindex="-1"><a class="header-anchor" href="#创建第一个应用"><span>创建第一个应用</span></a></h2><h3 id="部署-nginx" tabindex="-1"><a class="header-anchor" href="#部署-nginx"><span>部署 Nginx</span></a></h3><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml"><pre><code><span class="line"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1</span>
+<span class="line"><span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment</span>
+<span class="line"><span class="token key atrule">metadata</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx<span class="token punctuation">-</span>deployment</span>
+<span class="line"><span class="token key atrule">spec</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">replicas</span><span class="token punctuation">:</span> <span class="token number">3</span></span>
+<span class="line">  <span class="token key atrule">selector</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">matchLabels</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx</span>
+<span class="line">  <span class="token key atrule">template</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">metadata</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token key atrule">labels</span><span class="token punctuation">:</span></span>
+<span class="line">        <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx</span>
+<span class="line">    <span class="token key atrule">spec</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token key atrule">containers</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx</span>
+<span class="line">        <span class="token key atrule">image</span><span class="token punctuation">:</span> nginx<span class="token punctuation">:</span><span class="token number">1.21</span></span>
+<span class="line">        <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">        <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">80</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token comment"># 应用部署</span></span>
+<span class="line">kubectl apply <span class="token parameter variable">-f</span> nginx-deployment.yaml</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 暴露服务</span></span>
+<span class="line">kubectl expose deployment nginx-deployment <span class="token parameter variable">--type</span><span class="token operator">=</span>LoadBalancer <span class="token parameter variable">--port</span><span class="token operator">=</span><span class="token number">80</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 查看服务</span></span>
+<span class="line">kubectl get services</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="扩展和更新" tabindex="-1"><a class="header-anchor" href="#扩展和更新"><span>扩展和更新</span></a></h2><h3 id="扩展应用" tabindex="-1"><a class="header-anchor" href="#扩展应用"><span>扩展应用</span></a></h3><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token comment"># 扩展到 5 个副本</span></span>
+<span class="line">kubectl scale deployment nginx-deployment <span class="token parameter variable">--replicas</span><span class="token operator">=</span><span class="token number">5</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="滚动更新" tabindex="-1"><a class="header-anchor" href="#滚动更新"><span>滚动更新</span></a></h3><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token comment"># 更新镜像版本</span></span>
+<span class="line">kubectl <span class="token builtin class-name">set</span> image deployment/nginx-deployment <span class="token assign-left variable">nginx</span><span class="token operator">=</span>nginx:1.22</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="监控和调试" tabindex="-1"><a class="header-anchor" href="#监控和调试"><span>监控和调试</span></a></h2><h3 id="查看资源使用情况" tabindex="-1"><a class="header-anchor" href="#查看资源使用情况"><span>查看资源使用情况</span></a></h3><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token comment"># 查看 Pod 资源使用</span></span>
+<span class="line">kubectl <span class="token function">top</span> pods</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 查看节点资源使用</span></span>
+<span class="line">kubectl <span class="token function">top</span> nodes</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="调试-pod" tabindex="-1"><a class="header-anchor" href="#调试-pod"><span>调试 Pod</span></a></h3><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre><code><span class="line"><span class="token comment"># 查看 Pod 详情</span></span>
+<span class="line">kubectl describe pod <span class="token operator">&lt;</span>pod-name<span class="token operator">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># 查看事件</span></span>
+<span class="line">kubectl get events --sort-by<span class="token operator">=</span>.metadata.creationTimestamp</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h2><p>Kubernetes 提供了强大的容器编排能力，帮助开发者轻松管理复杂的分布式应用。通过学习这些基本概念和命令，您可以开始在 Kubernetes 上部署和管理您的应用程序。</p><p>更多信息请参考 <a href="https://kubernetes.io/docs/" target="_blank" rel="noopener noreferrer">官方文档</a>。</p></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">最近更新：: </span><time class="meta-item-info" datetime="2026-04-22T12:53:30.000Z" data-allow-mismatch>2026/4/22 12:53</time></div><div class="vp-meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: peengtao123@126.com">奔小康</span><!----><!--]--><!--]--></span></div></div></footer><!----><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-DWFb6zmK.js" defer></script>
+  </body>
+</html>
