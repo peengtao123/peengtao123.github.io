@@ -4,19 +4,19 @@ title: 技术分享博客
 heroImage: /logo.webp
 actions:
   - text: 开始阅读
-    link: /posts/docker-guide.html
+    link: /timeline/
     type: primary
 
   - text: 浏览文章
-    link: /posts/docker-guide.html
+    link: /article/
     type: secondary
 
-  - text: 浏览文章
-    link: /posts/docker-guide.html
+  - text: 分类
+    link: /category/
     type: secondary
 
-  - text: 浏览文章
-    link: /posts/docker-guide.html
+  - text: 标签
+    link: /tag/
     type: secondary
 
 features:
