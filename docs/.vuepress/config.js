@@ -8,7 +8,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
 
   title: '丑八怪',
-  description: '我的第一个VuePress站点',
+  description: '越玩越丑，这就是技术',
 
   theme: defaultTheme({
     logo: '/logo.webp',
