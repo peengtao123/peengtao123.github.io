@@ -1,31 +1,39 @@
 ---
 home: true
-title: 首页
+title: 技术分享博客
 heroImage: /logo.webp
 actions:
-  - text: 开始使用
-    link: /get-started.html
+  - text: 开始阅读
+    link: /posts/docker-guide.html
     type: primary
 
-  - text: 介绍
-    link: https://www.runoob.com/docker/docker-desktop.html
+  - text: 浏览文章
+    link: /posts/docker-guide.html
+    type: secondary
+
+  - text: 浏览文章
+    link: /posts/docker-guide.html
+    type: secondary
+
+  - text: 浏览文章
+    link: /posts/docker-guide.html
     type: secondary
 
 features:
-  - title: 简单优先
-    details: 最小的设置，以Markdown为中心的项目结构，帮助您专注于写作。
-  - title: Vue驱动
-    details: 享受Vue的开发体验，在Markdown中使用Vue组件，并使用Vue开发自定义主题。
-  - title: 高性能
-    details: VuePress为每个页面生成预渲染的静态HTML，并在页面加载后作为SPA运行。
-  - title: 主题
-    details: 开箱即用提供默认主题。您也可以选择社区主题或创建自己的主题。
-  - title: 插件
-    details: 灵活的插件API，允许插件为您的站点提供许多即插即用的功能。
-  - title: 打包器
-    details: 默认打包器是Vite，同时也支持Webpack。选择您喜欢的！
+  - title: 容器化技术
+    details: 深入学习 Docker 和 Kubernetes，掌握现代容器化部署方案。
+  - title: 开发环境
+    details: 搭建高效开发环境，配置镜像源和问题解决方案。
+  - title: Linux 与 WSL
+    details: 掌握 Windows Linux 子系统，提升命令行开发效率。
+  - title: DevOps 实践
+    details: 自动化部署、持续集成，打造高效开发流程。
+  - title: 持续更新
+    details: 定期分享技术实践和经验总结，紧跟技术前沿。
+  - title: 简洁实用
+    details: 以 Markdown 为中心，专注于内容和技术细节。
 
-footer: MIT 许可证 | 版权 © 2018-至今 VuePress 社区
+footer: MIT 许可证 | 版权 © 2024 技术分享博客
 ---
 
 
