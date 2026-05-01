@@ -22,6 +22,10 @@ actions:
   - text: demo
     link: https://peengtao123.github.io/demo/
     type: secondary
+
+  - text: demopet
+    link: https://peengtao123.github.io/demopet/
+    type: secondary
 features:
   - title: 容器化技术
     details: 深入学习 Docker 和 Kubernetes，掌握现代容器化部署方案。
